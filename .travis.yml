@@ -2,15 +2,13 @@ language: bash
 services: docker
 
 env:
-  - VERSION=8-jre8
 
 install:
   - git clone https://github.com/docker-library/official-images.git ~/official-images
 
 before_script:
   - env | sort
-  - cd "$VERSION"
-  - image="tomcat:$VERSION"
+  - image="qfdk:tomcat"
 
 script:
   - docker build -t "$image" .
@@ -19,4 +17,3 @@ script:
 after_script:
   - docker images
 
-# vim:set et ts=2 sw=2:
