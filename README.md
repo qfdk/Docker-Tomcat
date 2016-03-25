@@ -1,6 +1,6 @@
-# Docker-Tomcat
+# Docker-Tomcat [![Build Status](https://travis-ci.org/qfdk/Docker-Tomcat.svg?branch=master)](https://travis-ci.org/qfdk/Docker-Tomcat)
 
-## Introduction
+
 
 Tomcat use the port 80 and we can use the web-manager with user `qfdk`, password `qfdk`.
 
@@ -18,16 +18,14 @@ Tomcat use the port 80 and we can use the web-manager with user `qfdk`, password
 # clone project
 git clone https://github.com/qfdk/Docker-Tomcat.git && cd Docker-Tomcat
 # build image
-docker build -t myTomcat .
+docker build -t qfdk/myTomcat .
 # run your image
-docker run -it --rm -p 80:80 myTomcat
+docker run -it --rm -p 80:80 qfdk/myTomcat
 ```
 
-Now you have a Tomcat uses port 80 and you can upload `*.war` with web-manager via *http://192.168.99.100* 
+Now, you have a Tomcat server uses port 80 and you can upload `*.war` with web-manager via *http://192.168.99.100* 
 
-### PS:
-* user:qfdk
-* pass:qfdk
+
 
 
 
