@@ -18,9 +18,9 @@ Tomcat use the port 80 and we can use the web-manager with user `qfdk`, password
 # clone project
 git clone https://github.com/qfdk/Docker-Tomcat.git && cd Docker-Tomcat
 # build image
-docker build -t qfdk/myTomcat .
+docker build -t qfdk/tomcat .
 # run your image
-docker run -it --rm -p 80:80 qfdk/myTomcat
+docker run -it --rm -p 80:80 qfdk/tomcat
 ```
 
 Now, you have a Tomcat server uses port 80 and you can upload `*.war` with web-manager via *http://192.168.99.100* 
