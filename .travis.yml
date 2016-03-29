@@ -8,7 +8,7 @@ install:
 
 before_script:
   - env | sort
-  - image="qfdk:tomcat"
+  - image="qfdk/tomcat"
 
 script:
   - docker build -t "$image" .
