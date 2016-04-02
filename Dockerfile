@@ -1,5 +1,7 @@
 FROM java:8-jre
 
+ENV JAVA_OPTS -Xmx512m -Djava.security.egd=file:/dev/./urandom
+
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
 RUN mkdir -p "$CATALINA_HOME"
@@ -38,6 +40,7 @@ RUN set -x \
     
 ADD tomcat-users.xml /usr/local/tomcat/conf/
 ADD server.xml /usr/local/tomcat/conf/
+
 
 EXPOSE 80
 CMD ["catalina.sh", "run"]
