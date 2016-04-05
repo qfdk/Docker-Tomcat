@@ -1,4 +1,4 @@
-# Docker-Tomcat [![Build Status](https://travis-ci.org/qfdk/Docker-Tomcat.svg?branch=master)](https://travis-ci.org/qfdk/Docker-Tomcat)
+# Docker-Tomcat [![Build Status](https://travis-ci.org/qfdk/docker-rss-tomcat.svg?branch=master)](https://travis-ci.org/qfdk/docker-rss-tomcat)
 
 
 
