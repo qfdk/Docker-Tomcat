@@ -16,7 +16,7 @@ Tomcat use the port 80 and we can use the web-manager with user `qfdk`, password
 
 ```bash
 # clone project
-git clone https://github.com/qfdk/Docker-Tomcat.git && cd Docker-Tomcat
+git clone https://github.com/qfdk/docker-rss-tomcat && cd docker-rss-tomcat
 # build image
 docker build -t qfdk/tomcat .
 # run your image
